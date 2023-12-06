@@ -38,7 +38,7 @@
 | 주차 |    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문제번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    |
 | :--: | :------------: |
 |  1   | 1, 35, 70, 345 |
-|  2   |  |
+|  2   | 9, 58, 605, 704 |
 |  3   |  |
 |  4   |  |
 |  5   |  |
