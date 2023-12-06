@@ -1,11 +1,12 @@
 var climbStairs = function (n) {
-  let stairs = new Array(n).fill(0);
-  stairs[1] = 1;
-  stairs[2] = 2;
+  let step1 = 1;
+  let step2 = 2;
+
+  if (n < 3) return n;
 
   for (let i = 3; i <= n; i++) {
-    stairs[i] = stairs[i - 2] + stairs[i - 1];
+    [step1, step2] = [step2, step1 + step2];
   }
 
-  return stairs[n];
+  return step2;
 };
