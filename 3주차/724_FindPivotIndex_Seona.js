@@ -1,12 +1,14 @@
 var pivotIndex = function (nums) {
   let idx = 0;
+  let left = 0;
+  let right = nums.reduce((acc, cur) => acc + cur, 0) - nums[idx];
 
   while (idx < nums.length) {
-    let left = nums.slice(0, idx).reduce((acc, cur) => acc + cur, 0);
-    let right = nums.slice(idx + 1).reduce((acc, cur) => acc + cur, 0);
-
     if (left === right) return idx;
-    else idx++;
+
+    left += nums[idx];
+    right -= nums[idx + 1];
+    idx++;
   }
 
   return -1;
